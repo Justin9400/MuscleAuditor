@@ -262,7 +262,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  height: 50vw;
+  /* height: 50vw; */
 }
 
 .fh5co-bg {
@@ -272,6 +272,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   float: left;
 }
+
 .fh5co-bg .overlay {
   position: absolute;
   top: 0;
@@ -364,13 +365,13 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    height: 600px;
+    height: 700px;
   }
 }
 .fh5co-cover .display-t,
 .fh5co-cover .display-tc {
   z-index: 9;
-  height: 700px;
+  height:400px;
   display: table;
   width: 100%;
   margin-top: 100px;
