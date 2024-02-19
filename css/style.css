@@ -1130,6 +1130,12 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #F85A16;
   font-weight: 700;
 }
+
+.boldOrange {
+  color: #F85A16;
+  font-weight: 700;
+}
+
 #fh5co-started p {
   color: rgba(255, 255, 255, 0.5);
 }
