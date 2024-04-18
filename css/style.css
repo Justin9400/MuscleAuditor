@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 5px 10px;
   color: #000;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .fh5co-nav .menu-1 {
     display: none;
   }
@@ -165,6 +165,22 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
+.fh5co-nav ul li a.btn-primary{
+    padding: 15px;
+    margin: 0;
+    color: white;
+}
+
+.fh5co-nav ul li a.btn-primary:hover{
+  color: white !important;
+}
+
+.fh5co-nav ul li a.btn-primary:focus{
+  color: white !important;
+}
+
+
 .fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus, .fh5co-nav ul li a:active {
   color: #000 !important;
 }
@@ -556,7 +572,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-blog,
 #fh5co-contact,
 #fh5co-footer {
-  padding: 7em 0;
+  padding: 4em 0;
   clear: both;
 }
 
@@ -593,7 +609,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-box-shadow: 0px 10px 23px -10px rgba(0, 0, 0, 0.43);
   box-shadow: 0px 10px 23px -10px rgba(0, 0, 0, 0.43);
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .services {
     margin-top: 0;
     margin-bottom: 10px;
@@ -1020,7 +1036,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-heading {
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 .fh5co-heading h2 {
   font-size: 30px;
@@ -1132,11 +1148,6 @@ h1, h2, h3, h4, h5, h6, figure {
   color: rgba(255, 255, 255, 0.7);
 }
 #fh5co-started h2 .percent {
-  color: #F85A16;
-  font-weight: 700;
-}
-
-.boldOrange {
   color: #F85A16;
   font-weight: 700;
 }
@@ -1345,7 +1356,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   #fh5co-offcanvas {
     display: block;
   }
@@ -1536,7 +1547,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav-toggle {
   position: absolute;
   right: 0px;
-  top: 65px;
+  top: 20px;
   z-index: 21;
   padding: 6px 0 0 0;
   display: block;
@@ -1547,7 +1558,7 @@ h1, h2, h3, h4, h5, h6, figure {
   z-index: 2001;
   border-bottom: none !important;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .fh5co-nav-toggle {
     display: block;
   }
@@ -1750,3 +1761,123 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+.trainer-container{
+  display: flex !important;
+  justify-content: center!important;
+}
+
+.hp-title{
+  font-size: 60px !important;
+  font-weight: 550 !important;
+  text-align: start !important;
+}
+
+.hp-sub{
+  font-size: 20px !important;
+  font-weight: 450 !important;
+  text-align: start;
+  /* margin-left: 75px !important; */
+  /* white-space: pre-line !important; */
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("squat.jpg");
+
+  /* Set a specific height */
+  /* min-height: 500px; */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed !important;
+  background-position: center 13% !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll !important;
+  }
+}
+
+.nav-container{
+  display: flex ;
+  align-items: center;
+}
+
+.nav-logo{
+  width: 30% !important;
+}
+
+@media screen and (max-width: 560px){
+  .nav-logo{width: 60% !important;}
+
+  .hp-title{
+    font-size: 40px !important;
+  }
+
+  .hp-sub{
+    font-size: 15px !important;
+  }
+
+  .boldOrange{
+    font-size: 25px;
+  }
+
+  .hero-margin{
+    margin-top: 70px !important;
+  }
+}
+
+.mobile-break{
+  display: none;
+}
+
+@media screen and (max-width: 1023px){
+  /* .hero-container{
+    text-align: start;
+  } */
+
+  .mobile-break{
+    display: inline;
+  }
+
+  .desktop-break{
+    display: none;
+  }
+}
+
+.top-nav-container{
+  padding: 21px 0 !important;
+}
+
+@media screen and (max-width: 1200px){
+  .nav-cta-button{
+    margin-top: 10px !important;
+  }
+
+  #fh5co-offcanvas a{
+    color: #e3e3e3 !important;
+  }
+
+  #fh5co-offcanvas li{
+    margin-top: 15px !important;
+  }
+}
+
+.boldOrange {
+  color: #F85A16;
+  font-weight: 700 !important;
+  font-size: 30px;
+}
+
+/* @media (min-width: 992px) {
+  .hero-container{
+    width: 90% !important;
+    margin-left: 8% !important;
+  }
+} */
