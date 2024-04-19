@@ -1773,20 +1773,20 @@ h1, h2, h3, h4, h5, h6, figure {
 .hp-title{
   font-size: 60px !important;
   font-weight: 550 !important;
-  text-align: start !important;
+  text-align: center !important;
 }
 
 .hp-sub{
   font-size: 20px !important;
   font-weight: 450 !important;
-  text-align: start;
+  text-align: center !important;
   /* margin-left: 75px !important; */
   /* white-space: pre-line !important; */
 }
 
 .parallax {
   /* The image used */
-  background-image: url("squat.jpg");
+  /* background-image: url("sqssat.jpg"); */
 
   /* Set a specific height */
   /* min-height: 500px; */
@@ -1848,6 +1848,14 @@ h1, h2, h3, h4, h5, h6, figure {
 
   .desktop-break{
     display: none;
+  }
+
+  .hp-sub{
+    text-align: start !important;
+  }
+
+  .hp-title{
+    text-align: start !important;
   }
 }
 
