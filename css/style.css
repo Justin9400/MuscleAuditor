@@ -1917,13 +1917,13 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .footer-contact ul{
   border-bottom: 1px solid rgba(187, 187, 187, 0.2);
-  padding-bottom: 55px !important;
-  margin-bottom: 35px !important;
-  margin-top: 10px;
+  padding-bottom: 45px !important;
+  margin-bottom: 30px !important;
+  margin-top: 20px;
 }
 
 .footer-container{
-  margin-top: 33px;
+  margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -2040,7 +2040,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .footer-links ul li{
   margin-right: 40px;
-  font-size: 13px !important;
+  font-size: 15px !important;
 }
 
 .footer-links{
