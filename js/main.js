@@ -319,4 +319,132 @@
 	});
 
 
+	//Process wheel
+	document.addEventListener('DOMContentLoaded', function() {
+		// Get all divs with the class "changeBgDiv"
+		var processWheel = document.querySelector('.process-wheel');
+		var wheelText = processWheel.querySelector('.wheel-text');
+
+		var header = document.querySelector('.step-header');
+		var body = document.querySelector('.step-body');
+
+		// var header = document.querySelector('.process-wheel');
+
+		var targets = document.querySelectorAll('.target-div');
+		var progress = document.querySelector('.wheel-text');
+		progress.classList.add("progress-bottom");
+		
+		var currentIndex = 0;
+		var timer;
+	
+		// targets.forEach(function(div) {
+		// 	div.addEventListener('click', function() {
+		function changeTarget(index) {	
+				// Get the ID of the clicked div
+				// var id = this.getAttribute('id');
+				
+				header.style.opacity = 0;
+				body.style.opacity = 0;
+
+				var target = targets[index];
+				var id = target.getAttribute('id');
+				
+				if (id === 'audit-target') {
+					processWheel.style.backgroundImage = "url('../images/Audit.svg')";
+				} 
+				else if (id === 'report-target') {
+					processWheel.style.backgroundImage = "url('../images/Report.svg')";
+				} 
+				else if (id === 'train-target') {
+					processWheel.style.backgroundImage = "url('../images/Train.svg')";
+				} 
+				else if (id === 'progress-target') {
+					processWheel.style.backgroundImage = "url('../images/Progress.svg')";
+				}
+
+
+				setTimeout(function() {
+					if (id === 'audit-target') {
+						// processWheel.style.backgroundImage = "url('../images/Audit.svg')";
+						//wheelText.innerHTML = "Audit";
+
+						header.innerHTML = "<span class=\"orange\">Audit</span>";
+						body.innerHTML = "This is a 1-2 hour <strong>assessment of your body's current state of muscular control and stability</strong>. The goal of the assessment is to take in data of your standing and supine posture along with your active range of motion so that we can look back and determine whether or not we're going in the right direction. Reassessments occur every 1-3 months.";
+					} 
+					else if (id === 'report-target') {
+						//processWheel.style.backgroundImage = "url('../images/Report.svg')";
+						//wheelText.innerHTML = "Report";
+
+						header.innerHTML = "<span class=\"orange\">Report</span>";
+						body.innerHTML = "Once we've finished your audit, we'll go over a <strong>comprehensive report of our findings</strong>. Using this data, we'll create a detailed plan made specifically for you.";
+					} 
+
+					else if (id === 'train-target') {
+						//processWheel.style.backgroundImage = "url('../images/Train.svg')";
+						//wheelText.innerHTML = "Train";
+
+						header.innerHTML = "<span class=\"orange\">Train</span>";
+						body.innerHTML = "<strong>Exercise is the solution.</strong> Based on your assessment data, injury/surgery history, and goals we'll use specific exercises and training methods tailored to your unique body.";
+					} 
+
+					else if (id === 'progress-target') {
+						//processWheel.style.backgroundImage = "url('../images/Progress.svg')";
+						//wheelText.innerHTML = "Progress";
+
+						header.innerHTML = "<span class=\"orange\">Progress</span>";
+						body.innerHTML = "Meaning <strong>MICROprogression</strong>. The fitness industry has a habit of progressing exercise much too fast. We want to take things at an appropriate pace in order to give your muscles, joints, connective tissues, and even nervous system time to adapt.";
+					}
+
+					header.style.opacity = 1;
+					body.style.opacity = 1;
+					
+				}, 250);
+				// progress.style.transition = "all 5s ease-in-out";
+				// progress.style.backgroundPosition = 'bottom';
+				progress.classList.remove("progress-bottom");
+				progress.offsetWidth;
+				progress.classList.add("progress-bottom");
+		}	
+
+
+		// });
+		// function startTimer() {
+		// 	timer = setInterval(function() {
+		// 		// progress.style.transition = "none";
+		// 		// progress.style.backgroundPosition = 'top';
+		// 		currentIndex++;
+		// 		if (currentIndex >= targets.length) {
+		// 			currentIndex = 0; // Reset to the first target div
+		// 		}
+				
+		// 		changeTarget(currentIndex);
+		// 	}, 10000); // Change target every 5 seconds
+		// }
+
+		// function resetTimer() {
+		// 	clearInterval(timer);
+		// 	startTimer();
+		// }
+
+		progress.addEventListener("transitionend", function(event) {
+			currentIndex++;
+			if (currentIndex >= targets.length) {
+				currentIndex = 0;
+			}
+			
+			changeTarget(currentIndex);
+		});
+
+		targets.forEach(function(div, index) {
+			div.addEventListener('click', function() {
+				currentIndex = index;
+				changeTarget(currentIndex);
+				//resetTimer();
+			});
+		});
+
+		//startTimer();
+
+	});
+
 }());
