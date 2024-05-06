@@ -25,6 +25,13 @@
   font-style: normal;
   font-weight: bold;
 }
+
+@font-face {
+  font-family: 'Eraser';
+  src: url("../fonts/EraserRegular.ttf") format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
 /* =======================================================
 *
 * 	Template Style 
@@ -2929,16 +2936,16 @@ strong{
 }
 
 .orange{
-  color: #F85A16 !important;
+  color: #ed7540 !important;
 }
 
 .bb-description-container{
   display: flex;
-  padding-bottom: 0px !important;
   /* height: calc(200vh + 323px); */
-  height: 200vh;
+  /* height: 100vh; */
   position: relative;
   flex-direction: column;
+  padding: 64px 0px;
 }
 
 .description-paragraph{
@@ -2954,32 +2961,77 @@ strong{
   /* z-index: 1000; */
 }
 
-.description-img-end, .description-img-start{
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* flex: 1; */
+.description-img-container{
+  /* height: 50vh; */
+  height: 30vw;
+  display: flex;
+  position: relative;
+}
+
+.description-img-divider{
+  position: absolute;
   width: 100%;
-  height: 50%;
+  height: 100%;
+  background-color: white;
+  clip-path: polygon(0% 0%, 50.2% 0%, 0.2% 100%, 0% 100%);
+}
+
+.description-img-end, .description-img-start{
+
+  background-repeat: no-repeat;
+  flex: 1;
+  /* width: 100%; */
+  /* height: 50vh; */
+  height: 100%;
+  width: 79vw;
+  position: absolute;
 }
 
 .description-img-start{
-  background-image: url("../images/KyleG-270.jpg");
+  background-image: url("../images/KyleG-443.jpg");
+  background-size: 130% !important;
 
+  clip-path: polygon(0% 0%, 100% 0%, 25% 100%, 0% 100%);
   /* clip-path: polygon(0% 0%, 100% 0%, 100% 20%, 20% 100%, 0% 100%); */
   /* clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%, 0% 100%); */
   /* margin-bottom: 45vh;  */
   /* background-position: center; */
-  background-position: 50% 70% !important;
+  background-position: 165% 25% !important;
 }
 
 .description-img-end{
   /* height: 50vh; */
-  background-image: url("../images/KyleG-443.jpg");
+  background-size: 95% !important;
 
+  background-image: url("../images/KyleG-270.jpg");
+
+  clip-path: polygon(75% 0%, 100% 0%, 100% 100%, 0% 100%);
   /* clip-path: polygon(80% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%); */
   /* clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%); */
   /* margin-top: 45vh; */
   /* margin-left: -200px; */
-  background-position: 50% 70% !important;
-  align-self: flex-end;
+  background-position: 407% 60% !important;
+  right: 0px;
+}
+
+.chalk-talks-container{
+  padding: 64px 0px;
+ }
+
+.chalk-talks-container .container{
+  background-color: #1a1a1a;
+  /* background-image: linear-gradient(90deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 75%, rgba(255,255,255,0.2) 100%); */
+  background-image: radial-gradient(ellipse, rgba(0, 0, 0, 0.2) 50%, rgba(112, 112, 112, 0.2) 100%);
+  border: 4px solid burlywood;
+  min-height: 30vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: Eraser;
+  padding: 20px !important;
+}
+
+.chalkboard-header{
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 40px;
 }
