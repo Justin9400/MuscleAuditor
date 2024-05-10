@@ -1754,7 +1754,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .form-control {
   box-shadow: none;
-  background: transparent;
+  background: white;
   border: 2px solid rgba(0, 0, 0, 0.1);
   height: 54px;
   font-size: 18px;
@@ -2578,7 +2578,7 @@ h1, h2, h3, h4, h5, h6, figure {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 20px;
+  padding-left: 20px;
   flex: 1;
   border-left: 2px solid #efefef ;
 }
@@ -2607,6 +2607,7 @@ h1, h2, h3, h4, h5, h6, figure {
     border-left: none;
     border-top: 2px solid #efefef ;
     padding-top: 30px;
+    padding-left: 0px;
   }
 }
 
@@ -2694,7 +2695,7 @@ h1{
 
   .process-paragraph-content{
     border-right: none;
-    padding-left: 20px;
+    padding: 0px;
     /* border-top: 2px solid #efefef ;
     padding-top: 30px; */
   }
@@ -2946,10 +2947,48 @@ strong{
   position: relative;
   flex-direction: column;
   padding: 64px 0px;
+  /* background-color: #000;
+  color: white !important; */
 }
 
-.description-paragraph{
+.bb-top-container{
+  display: flex;
+}
 
+.bb-form{
+  /* border: 2px solid black; */
+  padding: 40px;
+  width: 100%;
+  box-shadow:  0 0 20px rgba(0,0,0,0.15);
+
+  /* height: 100%; */
+}
+
+.bb-form-container{
+  width: 40%;
+  margin-left: 100px;
+}
+
+.under-form-img{
+  background-image: url("../images/KyleG-443.jpg");
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 120%;
+
+  /* margin: auto; */
+  background-position: 60% 45%;
+  margin-top: 30px;
+  margin-left: 0px;
+  border-radius: 2px;
+
+  background-clip: content-box;
+  padding: 0 5px 0 20px;
+  border-left: 2px solid #efefef;
+}
+
+.bb-description-container h2{
+  /* color: white !important; */
 }
 
 .bb-description-container .container{
@@ -3015,10 +3054,8 @@ strong{
 }
 
 .chalk-talks-container{
-  padding: 64px 0px;
- }
+  padding: 32px;
 
-.chalk-talks-container .container{
   background-color: #1a1a1a;
   /* background-image: linear-gradient(90deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 75%, rgba(255,255,255,0.2) 100%); */
   background-image: radial-gradient(ellipse, rgba(0, 0, 0, 0.2) 50%, rgba(112, 112, 112, 0.2) 100%);
@@ -3026,12 +3063,89 @@ strong{
   min-height: 30vh;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-family: Eraser;
-  padding: 20px !important;
-}
+  margin: 40px 20px;
+  font-size: 20px;
+ }
 
 .chalkboard-header{
   width: 100%;
   text-align: center;
   color: white;
   font-size: 40px;
+  margin-bottom: 20px;
 }
+
+.chalkboard-body{
+  font-family: "Work Sans", Arial, sans-serif;
+  color: white;
+  /* width: 1170px; */
+}
+
+.chalkboard-img{
+  background-image: url("../images/KyleG-270.jpg");
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 120%;
+
+  background-position: 0% 55%;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.bb-description-img{
+  background-image: url("../images/KyleG-443.jpg");
+  height: 300px;
+  width: 90%;
+  background-repeat: no-repeat;
+  background-size: 120%;
+
+  background-position: 0% 55%;
+
+  margin: auto;
+  margin-top: 32px;
+  border-radius: 3px;
+}
+
+.bb-description-paragraph{
+  display: flex;
+  align-items: center;
+  /* height: 300px; */
+  position: relative;
+}
+
+.bb-description-img-1{
+  background-image: url("../images/Baseball-player.png");
+  height: 450px;
+  width: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: 50% 10%; */
+  /* border-radius: 2px; */
+  position: absolute;
+  overflow: visible;
+  bottom: -16%;
+  right: -15%;
+  /* border-radius: 4px;
+  box-shadow: 5px 10px 20px -5px rgba(0, 0, 0, 0.43); */
+  filter: drop-shadow(rgb(34, 34, 34) 0px -3px 10px);
+}
+
+.bb-description-img-1-container{
+  position: relative;
+  height: 400px;
+  width: 288px;
+  /* margin-right: 50px; */
+}
+
+.bb-description-paragraph p{
+  flex: 1;
+  font-size: 20px;
+  /* border-left: 2px solid #efefef; */
+  padding-left: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
