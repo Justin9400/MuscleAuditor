@@ -2905,7 +2905,7 @@ strong{
   .bb-header{
     background-position: bottom;
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
   }
 
   .bb-header-container{
@@ -2955,6 +2955,8 @@ strong{
   display: flex;
 }
 
+
+
 .bb-form{
   /* border: 2px solid black; */
   padding: 40px;
@@ -2964,27 +2966,32 @@ strong{
   /* height: 100%; */
 }
 
+.bb-form:focus-within{
+  box-shadow:  0 0 20px #ed744073;
+}
+
 .bb-form-container{
   width: 40%;
   margin-left: 100px;
+  position: relative;
 }
 
 .under-form-img{
   background-image: url("../images/KyleG-443.jpg");
-  height: 300px;
+  height: 400px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: 120%;
 
   /* margin: auto; */
   background-position: 60% 45%;
-  margin-top: 30px;
+  /* margin-top: 30px;
   margin-left: 0px;
-  border-radius: 2px;
+  border-radius: 2px; */
 
   background-clip: content-box;
-  padding: 0 5px 0 20px;
-  border-left: 2px solid #efefef;
+  /* padding: 20px;
+  border-left: 2px solid #efefef; */
 }
 
 .bb-description-container h2{
@@ -3124,7 +3131,7 @@ strong{
   /* border-radius: 2px; */
   position: absolute;
   overflow: visible;
-  bottom: -16%;
+  bottom: 0%;
   right: -15%;
   /* border-radius: 4px;
   box-shadow: 5px 10px 20px -5px rgba(0, 0, 0, 0.43); */
@@ -3149,3 +3156,40 @@ strong{
   margin-bottom: 0px;
 }
 
+
+
+.bpm-cta{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bpm-cta h2{
+  font-size: 38px;
+}
+
+@media screen and (max-width: 992px){
+  .bb-description-container{
+    padding: 30px 0px;
+  }
+
+  .bb-top-container{
+    flex-direction: column-reverse;
+    padding: 15px;
+  }
+
+  .bb-form-container{
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 40px;
+  }
+
+  .chalk-talks-container{
+    margin: 40px 0px;
+  }
+
+  .bpm-cta h2{
+    font-size: 30px;
+  }
+}
