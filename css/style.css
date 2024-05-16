@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  src: url("../fonts/icomoon/icomoon.woff?srf3rx");
+  src: url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -200,14 +200,14 @@ h1, h2, h3, h4, h5, h6, figure {
     margin: 0;
     color: white;
     text-transform: none !important;
-    font-size: 18px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    font-size: 15px;
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); */
     /* -webkit-text-stroke: .5px black; */
 }
 
 @media screen and (max-width: 1200px) {
   .nav-cta-button{
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); */
   }
 }
 
@@ -1993,7 +1993,6 @@ h1, h2, h3, h4, h5, h6, figure {
   .footer-btn{
     width: 140px;
     margin-top: 15px !important;
-    color: black !important;
   }
 
   .footer-contact ul{
@@ -2128,7 +2127,6 @@ h1, h2, h3, h4, h5, h6, figure {
 .footer-btn{
   font-size: 12px;
   margin-top: 8px;
-  color: black !important;
 }
 
 /* contact */
