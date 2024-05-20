@@ -412,7 +412,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
 }
 .fh5co-cover > .fh5co-container {
   position: relative;
@@ -1792,7 +1792,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(../images/loader.gif) center no-repeat #fff;
+  background: url("../images/loader.webp") center no-repeat #fff;
 }
 
 .js .animate-box {
@@ -1802,7 +1802,15 @@ h1, h2, h3, h4, h5, h6, figure {
 /*# sourceMappingURL=style.css.map */
 
 
+/*Home Page*/
 
+.hero-background{
+  background-image: url("../images/squat.jpg");
+  background-image: image-set(
+    url("../images/squat.avif") type("image/avif"),
+    url("../images/squat.jpg") type("image/jpeg")
+  );
+}
 
 .trainer-container{
   display: flex !important;
@@ -1816,6 +1824,10 @@ h1, h2, h3, h4, h5, h6, figure {
 
   .trainer-card-title{
     font-size: 22px !important;
+  }
+
+  .trainer-box{
+    width: 70%;
   }
 }
 
@@ -2315,7 +2327,10 @@ h1, h2, h3, h4, h5, h6, figure {
   background-size: cover;
   background-position: 50% 50%;
   border-radius: 2px;
-  background-image: url("../images/KyleG-449.jpg");
+  background-image: url("../images/Back.jpg");
+  background-image: image-set(
+    url("../images/Back.avif") type("image/avif"),
+    url("../images/Back.jpg") type("image/jpeg"));
   margin-left: 50px;
   border-radius: 4px;
   box-shadow: 5px 10px 20px -5px rgba(0, 0, 0, 0.43);
@@ -2346,6 +2361,9 @@ h1, h2, h3, h4, h5, h6, figure {
 
   /* background-image: linear-gradient( rgba(255, 255, 255, .3), rgba(255, 255, 255, .3), rgba(255, 255, 255, 0) ), url("../images/laptop-bench.jpg"); */
   background-image: url("../images/laptop-bench.jpg");
+  background-image: image-set(
+    url("../images/laptop-bench.avif") type("image/avif"),
+    url("../images/laptop-bench.jpg") type("image/jpeg"));
   background-size: cover;
   background-position: bottom;
 
@@ -2731,7 +2749,11 @@ h1{
   background-size: cover;
   background-position: 50% 50%;
   border-radius: 2px;
-  background-image: url("../images/KyleG-139.jpg");
+  background-image: url("../images/pointing-to-tablet.jpg");
+  background-image: image-set(
+    url(../images/pointing-to-tablet.avif) type("image/avif"),
+    url(../images/pointing-to-tablet.jpg) type("image/jpeg")
+  );
   margin-left: 50px;
   border-radius: 4px;
   box-shadow: 5px 10px 20px -5px rgba(0, 0, 0, 0.43);
@@ -2867,22 +2889,38 @@ strong{
 }
 
 .one-one-img{
-  background-image: url("../images/KyleG-580.jpg");
+  background-image: url("../images/dumbbell-bench-press.jpg");
+  background-image: image-set(
+    url("../images/dumbbell-bench-press.avif") type("image/avif"),
+    url("../images/dumbbell-bench-press.jpg") type("image/jpeg")
+  );
   margin-left: 10px;
 }
 
 .remote-img{
   background-image: url("../images/woman-with-phone.jpg");
+  background-image: image-set(
+    url("../images/woman-with-phone.avif") type("image/avif"),
+    url("../images/woman-with-phone.jpg") type("image/jpeg")
+  );
   margin-right: 10px;
 }
 
 .bb-img{
-  background-image: url("../images/KyleG-273.jpg");
+  background-image: url("../images/Kyle-talking-to-group.jpg");
+  background-image: image-set(
+    url("../images/Kyle-talking-to-group.avif") type("image/avif"),
+    url("../images/Kyle-talking-to-group.jpg") type("image/jpeg")
+  );
   margin-left: 10px;
 }
 
 .recovery-img{
-  background-image: url("../images/KyleG-19.jpg");
+  background-image: url("../images/Kyle-smiling-with-client.jpg");
+  background-image: image-set(
+    url("../images/Kyle-smiling-with-client.avif") type("image/avif"),
+    url("../images/Kyle-smiling-with-client.jpg") type("image/jpeg")
+  );
   margin-right: 10px;
 }
 
@@ -2926,12 +2964,23 @@ strong{
 /* baseball performance mentorship */
 
 .bb-header{
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3),  rgba(0, 0, 0, 0.3) ), url("../images/bb-field.jpg");
+  background-image: url("../images/bb-field-desktop.jpg");
+  background-image: image-set(
+    url("../images/bb-field-desktop.avif") type("image/avif"),
+    url("../images/bb-field-desktop.jpg") type("image/jpeg")
+  );
+
   width: 100%;
   /* height: 700px; */
   height: calc(100vh - 85px);
   background-size: cover;
   background-position: top;
+}
+
+.bb-header-overlay{
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3),  rgba(0, 0, 0, 0.3) );
+  width: 100%;
+  height: 100%;
 }
 
 .bb-header-container{
@@ -2964,6 +3013,15 @@ strong{
   .bb-header{
     background-position: bottom;
     height: auto;
+
+    background-image: url("../images/bb-field-1024.jpg");
+    background-image: image-set(
+      url("../images/bb-field-1024.avif") type("image/avif"),
+      url("../images/bb-field-1024.jpg") type("image/jpeg")
+    );
+  }
+
+  .bb-header-overlay{
     padding-bottom: 25px;
   }
 
@@ -2979,6 +3037,10 @@ strong{
 @media screen and (max-width: 480px){
   .bb-header{
     background-position: right bottom;
+
+  }
+
+  .bb-header-overlay{
     padding-top: 20px;
   }
 
@@ -3036,7 +3098,11 @@ strong{
 }
 
 .under-form-img{
-  background-image: url("../images/KyleG-443.jpg");
+  background-image: url("../images/group-high-five.jpg");
+  background-image: image-set(
+    url("../images/group-high-five.avif") type("image/avif"),
+    url("../images/group-high-five.jpg") type("image/jpeg")
+  );
   height: 400px;
   width: 100%;
   background-repeat: no-repeat;
@@ -3093,7 +3159,7 @@ strong{
 }
 
 .description-img-start{
-  background-image: url("../images/KyleG-443.jpg");
+  /* background-image: url("../images/KyleG-443.jpg"); */
   background-size: 130% !important;
 
   clip-path: polygon(0% 0%, 100% 0%, 25% 100%, 0% 100%);
@@ -3108,7 +3174,11 @@ strong{
   /* height: 50vh; */
   background-size: 95% !important;
 
-  background-image: url("../images/KyleG-270.jpg");
+  /* background-image: url("../images/chalk-talk.jpg");
+  background-image: image-set(
+    url("../images/chalk-talk.avif") type("image/avif"),
+    url("../images/chalk-talk.jpg") type("image/jpeg")
+  ); */
 
   clip-path: polygon(75% 0%, 100% 0%, 100% 100%, 0% 100%);
   /* clip-path: polygon(80% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%); */
@@ -3148,7 +3218,11 @@ strong{
 }
 
 .chalkboard-img{
-  background-image: url("../images/KyleG-270.jpg");
+  background-image: url("../images/chalk-talk.jpg");
+  background-image: image-set(
+    url("../images/chalk-talk.avif") type("image/avif"),
+    url("../images/chalk-talk.jpg") type("image/jpeg")
+  );
   height: 300px;
   width: 100%;
   background-repeat: no-repeat;
@@ -3160,7 +3234,7 @@ strong{
 }
 
 .bb-description-img{
-  background-image: url("../images/KyleG-443.jpg");
+  /* background-image: url("../images/KyleG-443.jpg"); */
   height: 300px;
   width: 90%;
   background-repeat: no-repeat;

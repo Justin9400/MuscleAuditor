@@ -34,7 +34,16 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
+	<link rel="preload" href="images/bb-field-desktop.avif" as="image" type="image/avif" media="(min-width: 1024px)"/>
+	<link rel="preload" href="images/bb-field-1024.avif" as="image" type="image/avif" media="(max-width: 1023px)"/>
+
+	<!-- <link rel="preload" as="image" href="images/loader.gif" /> -->
+	<link rel="preload" as="image" href="images/MA_Letterhead_CAP.svg" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
 	<link rel="icon" href="images/MA_SecondaryLogo.WH.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="images/MA_SecondaryLogo.WH_Apple_Touch_Icon.png">
 
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 	
@@ -106,8 +115,10 @@
 		</nav>
 
 		<header class="bb-header">
-			<div class="bb-header-container animate-box" data-animate-effect="fadeIn">
-				<div class="bb-title"><div class="bb-subtitle">Muscle Auditor's</div>Baseball Performance Mentorship</div>
+			<div class="bb-header-overlay">
+				<div class="bb-header-container animate-box" data-animate-effect="fadeIn">
+					<div class="bb-title"><div class="bb-subtitle">Muscle Auditor's</div>Baseball Performance Mentorship</div>
+				</div>
 			</div>
 		</header>
 
