@@ -1806,6 +1806,10 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .hero-background{
   background-image: url("../images/squat.jpg");
+  background-image: -webkit-image-set(
+    url("../images/squat.avif") type("image/avif"),
+    url("../images/squat.jpg") type("image/jpeg")
+  );
   background-image: image-set(
     url("../images/squat.avif") type("image/avif"),
     url("../images/squat.jpg") type("image/jpeg")
@@ -2328,6 +2332,9 @@ h1, h2, h3, h4, h5, h6, figure {
   background-position: 50% 50%;
   border-radius: 2px;
   background-image: url("../images/Back.jpg");
+  background-image: -webkit-image-set(
+    url("../images/Back.avif") type("image/avif"),
+    url("../images/Back.jpg") type("image/jpeg"));
   background-image: image-set(
     url("../images/Back.avif") type("image/avif"),
     url("../images/Back.jpg") type("image/jpeg"));
@@ -2361,6 +2368,9 @@ h1, h2, h3, h4, h5, h6, figure {
 
   /* background-image: linear-gradient( rgba(255, 255, 255, .3), rgba(255, 255, 255, .3), rgba(255, 255, 255, 0) ), url("../images/laptop-bench.jpg"); */
   background-image: url("../images/laptop-bench.jpg");
+  background-image: -webkit-image-set(
+    url("../images/laptop-bench.avif") type("image/avif"),
+    url("../images/laptop-bench.jpg") type("image/jpeg"));
   background-image: image-set(
     url("../images/laptop-bench.avif") type("image/avif"),
     url("../images/laptop-bench.jpg") type("image/jpeg"));
@@ -2750,6 +2760,10 @@ h1{
   background-position: 50% 50%;
   border-radius: 2px;
   background-image: url("../images/pointing-to-tablet.jpg");
+  background-image: -webkit-image-set(
+    url(../images/pointing-to-tablet.avif) type("image/avif"),
+    url(../images/pointing-to-tablet.jpg) type("image/jpeg")
+  );
   background-image: image-set(
     url(../images/pointing-to-tablet.avif) type("image/avif"),
     url(../images/pointing-to-tablet.jpg) type("image/jpeg")
@@ -2890,6 +2904,10 @@ strong{
 
 .one-one-img{
   background-image: url("../images/dumbbell-bench-press.jpg");
+  background-image: -webkit-image-set(
+    url("../images/dumbbell-bench-press.avif") type("image/avif"),
+    url("../images/dumbbell-bench-press.jpg") type("image/jpeg")
+  );
   background-image: image-set(
     url("../images/dumbbell-bench-press.avif") type("image/avif"),
     url("../images/dumbbell-bench-press.jpg") type("image/jpeg")
@@ -2899,6 +2917,10 @@ strong{
 
 .remote-img{
   background-image: url("../images/woman-with-phone.jpg");
+  background-image: -webkit-image-set(
+    url("../images/woman-with-phone.avif") type("image/avif"),
+    url("../images/woman-with-phone.jpg") type("image/jpeg")
+  );
   background-image: image-set(
     url("../images/woman-with-phone.avif") type("image/avif"),
     url("../images/woman-with-phone.jpg") type("image/jpeg")
@@ -2908,6 +2930,10 @@ strong{
 
 .bb-img{
   background-image: url("../images/Kyle-talking-to-group.jpg");
+  background-image: -webkit-image-set(
+    url("../images/Kyle-talking-to-group.avif") type("image/avif"),
+    url("../images/Kyle-talking-to-group.jpg") type("image/jpeg")
+  );
   background-image: image-set(
     url("../images/Kyle-talking-to-group.avif") type("image/avif"),
     url("../images/Kyle-talking-to-group.jpg") type("image/jpeg")
@@ -2917,6 +2943,10 @@ strong{
 
 .recovery-img{
   background-image: url("../images/Kyle-smiling-with-client.jpg");
+  background-image: -webkit-image-set(
+    url("../images/Kyle-smiling-with-client.avif") type("image/avif"),
+    url("../images/Kyle-smiling-with-client.jpg") type("image/jpeg")
+  );
   background-image: image-set(
     url("../images/Kyle-smiling-with-client.avif") type("image/avif"),
     url("../images/Kyle-smiling-with-client.jpg") type("image/jpeg")
@@ -2965,6 +2995,10 @@ strong{
 
 .bb-header{
   background-image: url("../images/bb-field-desktop.jpg");
+  background-image: -webkit-image-set(
+    url("../images/bb-field-desktop.avif") type("image/avif"),
+    url("../images/bb-field-desktop.jpg") type("image/jpeg")
+  );
   background-image: image-set(
     url("../images/bb-field-desktop.avif") type("image/avif"),
     url("../images/bb-field-desktop.jpg") type("image/jpeg")
@@ -3015,6 +3049,10 @@ strong{
     height: auto;
 
     background-image: url("../images/bb-field-1024.jpg");
+    background-image: -webkit-image-set(
+      url("../images/bb-field-1024.avif") type("image/avif"),
+      url("../images/bb-field-1024.jpg") type("image/jpeg")
+    );
     background-image: image-set(
       url("../images/bb-field-1024.avif") type("image/avif"),
       url("../images/bb-field-1024.jpg") type("image/jpeg")
@@ -3099,6 +3137,10 @@ strong{
 
 .under-form-img{
   background-image: url("../images/group-high-five.jpg");
+  background-image: -webkit-image-set(
+    url("../images/group-high-five.avif") type("image/avif"),
+    url("../images/group-high-five.jpg") type("image/jpeg")
+  );
   background-image: image-set(
     url("../images/group-high-five.avif") type("image/avif"),
     url("../images/group-high-five.jpg") type("image/jpeg")
@@ -3219,6 +3261,10 @@ strong{
 
 .chalkboard-img{
   background-image: url("../images/chalk-talk.jpg");
+  background-image: -webkit-image-set(
+    url("../images/chalk-talk.avif") type("image/avif"),
+    url("../images/chalk-talk.jpg") type("image/jpeg")
+  );
   background-image: image-set(
     url("../images/chalk-talk.avif") type("image/avif"),
     url("../images/chalk-talk.jpg") type("image/jpeg")
