@@ -448,10 +448,20 @@
 						<div class="form-group">
 							<input type="submit" value="Send Message" class="btn btn-primary">
 						</div>
-						<input type="hidden" name="_subject" value="Muscle Auditor Contact">
+						<input type="hidden" name="_subject" value="Contact Form Submission">
 						<input type="hidden" name="_autoresponse" value="Thank you for contacting Muscle Auditor! We will get back to you as soon as we can.">
 						<input type="text" name="_honey" style="display:none">
+						<input type="hidden" name="_url" value="muscleauditor.com/contact">
 					</form>		
+
+					<script>
+						const lname = document.getElementById("lname");
+						const subject = document.querySelector('input[name="_subject"]');
+
+						lname.addEventListener("input", () => {
+							subject.value = "Contact Form Submission: " + lname.value;
+						});
+					</script>
 				</div>
 			</div>
 			
