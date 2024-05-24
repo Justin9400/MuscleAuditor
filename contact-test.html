@@ -413,7 +413,7 @@
 				</div>
 				<div class="col-md-6 animate-box">
 					<h3>Get In Touch</h3>
-					<form target="_blank" action="https://formsubmit.co/kyle@muscleauditor.com" method="POST">
+					<form target="_blank" action="https://api.web3forms.com/submit" method="POST">
 						<div class="row form-group">
 							<div class="col-md-6">
 								<label for="fname">First Name*</label>
@@ -435,7 +435,7 @@
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label for="email">Email*</label>
-								<input name="Email" type="email" id="email" class="form-control" placeholder="john@email.com" required>
+								<input name="email" type="email" id="email" class="form-control" placeholder="john@email.com" required>
 							</div>
 						</div>
 
@@ -446,17 +446,22 @@
 							</div>
 						</div>
 						<div class="form-group">
+							<div class="h-captcha" data-captcha="true"></div>
+						</div>
+						<div class="form-group">
 							<input type="submit" value="Send Message" class="btn btn-primary">
 						</div>
-						<input type="hidden" name="_subject" value="Contact Form Submission">
-						<input type="hidden" name="_autoresponse" value="Thank you for contacting Muscle Auditor! We will get back to you as soon as we can.">
-						<input type="text" name="_honey" style="display:none">
-						<input type="hidden" name="_url" value="https://muscleauditor.com/contact">
+
+						<input type="hidden" name="access_key" value="87134e1d-2b9a-4b41-a05c-d62aa8db6558">
+						<input type="hidden" name="subject" value="Contact Form Submission: ">
+						<input type="hidden" name="from_name" value="muscleauditor.com/contact">
+						<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 					</form>		
 
+					<script src="https://web3forms.com/client/script.js" async defer></script>
 					<script>
 						const lname = document.getElementById("lname");
-						const subject = document.querySelector('input[name="_subject"]');
+						const subject = document.querySelector('input[name="subject"]');
 
 						lname.addEventListener("input", () => {
 							subject.value = "Contact Form Submission: " + lname.value;
