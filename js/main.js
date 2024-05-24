@@ -454,5 +454,38 @@
 
 	});
 
+	if ('IntersectionObserver' in window) {
+		document.addEventListener("DOMContentLoaded", function() {
+
+			function handleIntersection(entries) {
+			entries.map((entry) => {
+				if (entry.isIntersecting) {
+				// Item has crossed our observation
+				// threshold - load src from data-src
+				if (entry.target.hasAttribute('data-bgimage')) {
+					entry.target.style.backgroundImage = entry.target.dataset.bgimage;
+				}else{
+					entry.target.classList.add(entry.target.dataset.imagecls);
+				}
+				// Job done for this item - no need to watch it!
+				observer.unobserve(entry.target);
+				}
+			});
+			}
+
+			const lazyImageContainers = document.querySelectorAll('.lazy-load');
+			const observer = new IntersectionObserver(
+			handleIntersection,
+			{ rootMargin: "500px" }
+			);
+			lazyImageContainers.forEach(lazyImageContainer => observer.observe(lazyImageContainer));
+		});
+		} else {
+		// No interaction support? Load all background images automatically
+		const lazyImageContainers = document.querySelectorAll('.lazy-load');
+		lazyImageContainers.forEach(lazyImageContainer => {
+			lazyImageContainer.style.backgroundImage = lazyImageContainer.dataset.bgimage;
+		});
+	}
 
 }());

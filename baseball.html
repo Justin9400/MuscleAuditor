@@ -168,21 +168,21 @@
 					<div class="">
 						<h2><strong class="orange">Learn More</strong></h2>
 						<p>Interested in our Baseball Performance Mentorship? Fill out your info below and we'll get in touch</p>
-						<form target="_blank" action="https://formsubmit.co/kyle@muscleauditor.com" method="POST">
+						<form id="bb-form-id" action="https://api.web3forms.com/submit" method="POST">
 							<div class="row form-group">
 								<div class="col-md-6">
 									<label for="bb-fname">First Name*</label>
-									<input name="First_Name" type="text" id="bb-fname" class="form-control" placeholder="John" required>
+									<input name="First Name" type="text" id="bb-fname" class="form-control" placeholder="John" required>
 								</div>
 								<div class="col-md-6">
 									<label for="bb-lname">Last Name*</label>
-									<input name="Last_Name" type="text" id="bb-lname" class="form-control" placeholder="Doe" required>
+									<input name="Last Name" type="text" id="bb-lname" class="form-control" placeholder="Doe" required>
 								</div>
 							</div>
 							<div class="row form-group">
 								<div class="col-md-12">
 									<label for="bb-email">Email*</label>
-									<input name="email" type="email" id="bb-email" class="form-control" placeholder="john@email.com" required>
+									<input name="Email" type="email" id="bb-email" class="form-control" placeholder="john@email.com" required>
 								</div>
 							</div>
 							<div class="row form-group">
@@ -194,13 +194,13 @@
 							<div class="row form-group">
 								<div class="col-md-12">
 									<label for="bb-hs">High School</label>
-									<input name="High_School" type="text" id="bb-hs" class="form-control" placeholder="Bellevue High School">
+									<input name="High School" type="text" id="bb-hs" class="form-control" placeholder="Bellevue High School">
 								</div>
 							</div>
 							<div class="row form-group">
 								<div class="col-md-12">
 									<label for="bb-grad-year">Graduation Year*</label>
-									<input name="Graduation_Year" type="number" id="bb-grad-year" class="form-control" placeholder="2030" required>
+									<input name="Graduation Year" type="number" id="bb-grad-year" class="form-control" placeholder="2030" required>
 								</div>
 							</div>
 							
@@ -217,21 +217,45 @@
 								</div>
 							</div>
 							<div class="form-group">
+								<div class="h-captcha" data-captcha="true"></div>
+							</div>
+							<div class="form-group">
 								<input type="submit" value="Submit" class="btn btn-primary">
 							</div>
-							<input type="hidden" name="_subject" value="Baseball Performance Form Submission">
-							<input type="hidden" name="_autoresponse" value="Thank you for your interest in the Baseball Performance Mentorship! We will get back to you as soon as we can.">
-							<input type="text" name="_honey" style="display:none">
-							<input type="hidden" name="_url" value="https://muscleauditor.com/baseball">
+							<input type="hidden" name="access_key" value="d3a4aa73-edf5-4d99-9492-c8bbd396cbb9">
+							<input type="hidden" name="subject" value="Baseball Performance Form Submission: ">
+							<input type="hidden" name="from_name" value="muscleauditor.com">
+							<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 						</form>
 
+						<script src="https://web3forms.com/client/script.js" async defer></script>
 						<script>
+							//Setting the subject field
 							const lname = document.getElementById("bb-lname");
-							const subject = document.querySelector('input[name="_subject"]');
+							const subject = document.querySelector('input[name="subject"]');
 	
 							lname.addEventListener("input", () => {
 								subject.value = "Baseball Performance Form Submission: " + lname.value;
 							});
+
+							//hcaptcha validation
+							const form = document.getElementById('bb-form-id');
+							
+							form.addEventListener('submit', function(e) {
+
+								const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+								if (!hCaptcha) {
+									e.preventDefault();
+									alert("Please fill out captcha field")
+									return
+								}
+							});
+
+							// Reset the form fields when the page loads
+							window.onload = function() {
+								form.reset();
+							};
 						</script>
 					</div>
 				</div>

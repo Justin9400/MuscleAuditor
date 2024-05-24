@@ -34,7 +34,7 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
-	<link rel="preload" as="image" href="images/img_bg_2.avif" type="img/avif"/>
+	<link rel="preload" as="image" href="images/img_bg_2.avif" type="image/avif"/>
 	<link rel="preload" as="image" href="images/loader.webp" type="image/webp"/>
 	<link rel="preload" as="image" href="images/MA_Letterhead_CAP.svg"/>
 	<link rel="preload" as="image" href="images/Back.avif" type="image/avif"/>
@@ -141,36 +141,6 @@
 			}, 2500);
 		}
 		//}
-
-		if ('IntersectionObserver' in window) {
-			document.addEventListener("DOMContentLoaded", function() {
-
-				function handleIntersection(entries) {
-				entries.map((entry) => {
-					if (entry.isIntersecting) {
-					// Item has crossed our observation
-					// threshold - load src from data-src
-					entry.target.style.backgroundImage = "url('"+entry.target.dataset.bgimage+"')";
-					// Job done for this item - no need to watch it!
-					observer.unobserve(entry.target);
-					}
-				});
-				}
-
-				const lazyImageContainers = document.querySelectorAll('.lazy-load');
-				const observer = new IntersectionObserver(
-				handleIntersection,
-				{ rootMargin: "500px" }
-				);
-				lazyImageContainers.forEach(lazyImageContainer => observer.observe(lazyImageContainer));
-			});
-			} else {
-			// No interaction support? Load all background images automatically
-			const lazyImageContainers = document.querySelectorAll('.lazy-load');
-			lazyImageContainers.forEach(lazyImageContainer => {
-				lazyImageContainer.style.backgroundImage = "url('"+lazyImageContainer.dataset.bgimage+"')";
-			});
-		}
 	</script>
 
 	</head>
@@ -319,7 +289,7 @@
 					<ul id="fh5co-portfolio-list" class="image-gallery">
 
 						<!-- <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/squatting-preview.avif);"> -->
-						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="images/squatting-preview.avif">
+						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/squatting-preview.avif')">
 							<a href="images/squatting.jpg" aria-label="View gallery image 1">
 								<!-- <img src="images/squatting.jpg" alt="Thumbnail"> -->
 								<!-- <div class="case-studies-summary">
@@ -328,7 +298,7 @@
 								</div> -->
 							</a>
 						</li>
-						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="images/laptop-bench-thumbnail.avif">
+						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/laptop-bench-thumbnail.avif')">
 							<a href="images/laptop-bench.jpg" aria-label="View gallery image 2">
 								<!-- <div class="case-studies-summary">
 									<span>Web Design</span>
@@ -337,7 +307,7 @@
 							</a>
 						</li>
 
-						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="images/Kyle-smiling-with-client-thumbnail.avif">
+						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/Kyle-smiling-with-client-thumbnail.avif')">
 							<a href="images/Kyle-smiling-with-client.jpg" aria-label="View gallery image 3">
 								<!-- <div class="case-studies-summary">
 									<span>Web Design</span>
@@ -346,7 +316,7 @@
 							</a>
 						</li>
 
-						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="images/bench-press-spot-thumbnail.avif"> 
+						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/bench-press-spot-thumbnail.avif')"> 
 							<a href="images/bench-press-spot.jpg" aria-label="View gallery image 4">
 								<!-- <div class="case-studies-summary">
 									<span>Web Design</span>
@@ -354,7 +324,7 @@
 								</div> -->
 							</a>
 						</li>
-						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="images/medicine-ball-workout-thumbnail.avif">
+						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/medicine-ball-workout-thumbnail.avif')">
 							<a href="images/medicine-ball-workout.jpg" aria-label="View gallery image 5">
 								<!-- <div class="case-studies-summary">
 									<span>Web Design</span>
@@ -362,7 +332,7 @@
 								</div> -->
 							</a>
 						</li>
-						<li class="two-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="images/fistbump-thumbnail.avif">
+						<li class="two-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/fistbump-thumbnail.avif')">
 							<a href="images/fistbump.jpg" aria-label="View gallery image 6">
 								<!-- <div class="case-studies-summary">
 									<span>Illustration</span>
@@ -370,7 +340,7 @@
 								</div> -->
 							</a>
 						</li>
-						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="images/baseball-player-full-thumbnail.avif">
+						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/baseball-player-full-thumbnail.avif')">
 							<a href="images/baseball-player-full.jpg" aria-label="View gallery image 7">
 								<!-- <div class="case-studies-summary">
 									<span>Web Design</span>
@@ -378,7 +348,7 @@
 								</div> -->
 							</a>
 						</li>
-						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="images/balance-thumbnail.avif">
+						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/balance-thumbnail.avif')">
 							<a href="images/balance.jpg" aria-label="View gallery image 8">
 								<!-- <div class="case-studies-summary">
 									<span>Web Design</span>
@@ -386,7 +356,7 @@
 								</div> -->
 							</a>
 						</li>
-						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="images/stretching-thumbnail.avif">
+						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/stretching-thumbnail.avif')">
 							<a href="images/stretching.jpg" aria-label="View gallery image 9">
 								<!-- <div class="case-studies-summary">
 									<span>Web Design</span>
@@ -394,7 +364,7 @@
 								</div> -->
 							</a>
 						</li>
-						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="images/Kyle-looking-at-whiteboard-thumbnail.avif">
+						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/Kyle-looking-at-whiteboard-thumbnail.avif')">
 							<a href="images/Kyle-looking-at-whiteboard.jpg" aria-label="View gallery image 10">
 								<!-- <div class="case-studies-summary">
 									<span>Web Design</span>
@@ -402,7 +372,7 @@
 								</div> -->
 							</a>
 						</li>
-						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="images/deadlift-thumbnail.avif">
+						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/deadlift-thumbnail.avif')">
 							<a href="images/deadlift.jpg" aria-label="View gallery image 11">
 								<!-- <div class="case-studies-summary">
 									<span>Web Design</span>
