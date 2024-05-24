@@ -2625,27 +2625,49 @@ h1, h2, h3, h4, h5, h6, figure {
   transition: opacity 0.5s ease-in-out;
 }
 
-.wheel-text{
-  /* background-color: #2b4656; */
+@keyframes changeBgGradient {
+  0% {
+    transform: translateY(100%);
+  }
 
-  background: linear-gradient(to top, #2b4656 50%, rgba(255, 255, 255, 0) 50%);
-  background-size: 100% 200%;
-  
-  transition: none;
-  background-position: top;
+  100% {
+    transform: translateY(0%);
+  }
+}
 
-
-
+.wheel-loader-container{
   height: 56.5%;
   width: 56.5%;
   border-radius: 100%;
+  overflow: hidden;
+}
+
+.wheel-loader{
+  /* background-color: #2b4656; */
+
+  /* background: linear-gradient(to top, #2b4656 50%, rgba(255, 255, 255, 0) 50%); */
+  background-color: #2b4656;
+  /* background-size: 100% 200%; */
+  
+  /* transition: none; */
+  background-position: top;
+  animation: changeBgGradient 18s linear;
+
+
+  height: 100%;
+  width: 100%;
+  /* border-radius: 100%; */
   /* transition: height 5s linear; */
+  /* will-change: transform; */
 }
 
 .progress-bottom{
-  transition: all 18s linear;
-  background-position: bottom;
+  /* transition: all 18s linear; */
+  animation: changeBgGradient 5s linear;
+  /* background-position: bottom; */
 }
+
+
 
 .wheel-logo{
   position: absolute;

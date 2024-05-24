@@ -330,7 +330,7 @@
 	document.addEventListener('DOMContentLoaded', function() {
 		// Get all divs with the class "changeBgDiv"
 		var processWheel = document.querySelector('.process-wheel');
-		var wheelText = processWheel.querySelector('.wheel-text');
+		// var wheelText = processWheel.querySelector('.wheel-text');
 
 		var header = document.querySelector('.step-header');
 		var body = document.querySelector('.step-body');
@@ -338,8 +338,8 @@
 		// var header = document.querySelector('.process-wheel');
 
 		var targets = document.querySelectorAll('.target-div');
-		var progress = document.querySelector('.wheel-text');
-		progress.classList.add("progress-bottom");
+		var progress = document.querySelector('.wheel-loader-container').firstElementChild;
+		progress.classList.add(".wheel-loader");
 		
 		var currentIndex = 0;
 		var timer;
@@ -408,9 +408,9 @@
 				}, 250);
 				// progress.style.transition = "all 5s ease-in-out";
 				// progress.style.backgroundPosition = 'bottom';
-				progress.classList.remove("progress-bottom");
+				progress.classList.remove("wheel-loader");
 				progress.offsetWidth;
-				progress.classList.add("progress-bottom");
+				progress.classList.add("wheel-loader");
 		}	
 
 
@@ -433,7 +433,7 @@
 		// 	startTimer();
 		// }
 
-		progress.addEventListener("transitionend", function(event) {
+		progress.addEventListener("animationend", function(event) {
 			currentIndex++;
 			if (currentIndex >= targets.length) {
 				currentIndex = 0;
