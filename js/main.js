@@ -484,7 +484,11 @@
 		// No interaction support? Load all background images automatically
 		const lazyImageContainers = document.querySelectorAll('.lazy-load');
 		lazyImageContainers.forEach(lazyImageContainer => {
-			lazyImageContainer.style.backgroundImage = lazyImageContainer.dataset.bgimage;
+			if (lazyImageContainer.hasAttribute('data-bgimage')) {
+				lazyImageContainer.style.backgroundImage = lazyImageContainer.dataset.bgimage;
+			}else{
+				entry.target.classList.add(entry.target.dataset.imagecls);
+			}
 		});
 	}
 

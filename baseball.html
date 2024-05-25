@@ -36,40 +36,106 @@
 
 	<link rel="preload" href="images/bb-field-desktop.avif" as="image" type="image/avif" media="(min-width: 1024px)"/>
 	<link rel="preload" href="images/bb-field-1024.avif" as="image" type="image/avif" media="(max-width: 1023px)"/>
-
-	<!-- <link rel="preload" as="image" href="images/loader.gif" /> -->
+	
+	<link rel="preload" as="image" href="images/loader.webp" type="image/webp"/>
 	<link rel="preload" as="image" href="images/MA_Letterhead_CAP.svg" />
+
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
 	<link rel="icon" href="images/MA_SecondaryLogo.WH.svg" type="image/svg+xml">
 	<link rel="apple-touch-icon" href="images/MA_SecondaryLogo.WH_Apple_Touch_Icon.png">
 
-	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
+	<link rel="preload" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800"></noscript>
 	
+	<style>
+		.animate-box{
+			opacity: 0;
+		}
+
+		.fh5co-loader {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 100 !important;
+			background: url(../images/loader.webp) center no-repeat #fff;
+		}
+
+		.contact-header-container{
+			position: relative;
+			z-index: 1;
+		}
+	 </style>
+
+
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="preload" href="css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/animate.css"></noscript>
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="preload" href="css/icomoon.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/icomoon.css"></noscript>
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+	<link rel="preload" href="css/baseball.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+	<noscript><link rel="stylesheet" href="css/baseball.css"></noscript>
 
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- <link rel="stylesheet" href="css/magnific-popup.css"> -->
 
 	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- <link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet';removeWhite()">
+	<noscript><link rel="stylesheet" href="css/style.css"></noscript>
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- <script src="js/modernizr-2.6.2.min.js"></script> -->
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+
+	<script>
+		var removeWhite = function() {
+				const loaderElement = document.querySelector(".fh5co-loader");
+				loaderElement.addEventListener("transitionend", function(event) {
+					loaderElement.style.display= "none";
+				});
+
+				loaderElement.style.transition = "opacity 0.5s"; // Set the transition duration
+				loaderElement.style.opacity = "0"; // Fade out the element
+		};
+		
+		// var animationTimeout = function() {
+		if ('IntersectionObserver' in window) {
+			setTimeout(() => {
+				const observer = new IntersectionObserver(entries => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							// Element is in the viewport, remove the class
+							entry.target.classList.remove('animate-box');
+						}
+					});
+				}, { root: null, threshold: 0.5 });
+
+				// Select all elements with the class "animate-box"
+				const animateBoxes = document.querySelectorAll('.animate-box');
+
+				// Observe each element
+				animateBoxes.forEach(box => {
+					observer.observe(box);
+				});
+
+				setTimeout(() => {observer.disconnect(); }, 500);
+			}, 2500);
+		}
+		//}
+	</script>
 
 	</head>
 	<body>
@@ -145,7 +211,7 @@
 				<!-- <div class="bb-description-img"></div> -->
 				<div class="chalk-talks-container animate-box">
 					<!-- <div class="container"> -->
-						<div class="chalkboard-img"></div>
+						<div class="chalkboard-img lazy-load" data-imagecls="chalkboard-img-img"></div>
 						<div class="chalkboard-header">Chalk Talks</div>
 						<div class="chalkboard-body">Chalk Talks are times during our training sessions when we discuss the habits and mental skills of high performing ballplayers competing in the college, MiLB, and MLB ranks. Athletes thinking critically about off the field topics that affect on the field performance: discipline, self-talk, routines, stress, and others. Each Talk is actionable and meant to be practiced by the athlete immediately. </div>
 						
@@ -350,7 +416,7 @@
 			</div> -->
 
 	</div>
-	<div class="under-form-img parallax">
+	<div class="under-form-img parallax lazy-load" data-imagecls="under-form-img-img">
 	<div id="fh5co-started" class="fh5co-bg hp-cta bpm-cta">
 		<div class="overlay"></div>
 		<div class="container">
@@ -457,24 +523,24 @@
 	</div>
 	
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+	<script defer src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script defer src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script defer src="js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script defer src="js/jquery.waypoints.min.js"></script>
 	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
+	<!-- <script src="js/jquery.stellar.min.js"></script> -->
 	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+	<!-- <script src="js/owl.carousel.min.js"></script> -->
 	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
+	<!-- <script src="js/jquery.countTo.js"></script> -->
 	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
+	<!-- <script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script> -->
 	<!-- Main -->
-	<script src="js/main.js"></script>
+	<script defer src="js/main.js"></script>
 
 	</body>
 </html>

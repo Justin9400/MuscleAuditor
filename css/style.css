@@ -3016,6 +3016,7 @@ strong{
 /* baseball performance mentorship */
 
 .bb-header{
+  background-color: black;
   background-image: url("../images/bb-field-desktop.jpg");
   background-image: -webkit-image-set(
     url("../images/bb-field-desktop.avif") type("image/avif"),
@@ -3158,15 +3159,6 @@ strong{
 }
 
 .under-form-img{
-  background-image: url("../images/group-high-five.jpg");
-  background-image: -webkit-image-set(
-    url("../images/group-high-five.avif") type("image/avif"),
-    url("../images/group-high-five.jpg") type("image/jpeg")
-  );
-  background-image: image-set(
-    url("../images/group-high-five.avif") type("image/avif"),
-    url("../images/group-high-five.jpg") type("image/jpeg")
-  );
   height: 400px;
   width: 100%;
   background-repeat: no-repeat;
@@ -3181,6 +3173,18 @@ strong{
   background-clip: content-box;
   /* padding: 20px;
   border-left: 2px solid #efefef; */
+}
+
+.under-form-img-img{
+  background-image: url("../images/group-high-five.jpg");
+  background-image: -webkit-image-set(
+    url("../images/group-high-five.avif") type("image/avif"),
+    url("../images/group-high-five.jpg") type("image/jpeg")
+  );
+  background-image: image-set(
+    url("../images/group-high-five.avif") type("image/avif"),
+    url("../images/group-high-five.jpg") type("image/jpeg")
+  );
 }
 
 .bb-description-container h2{
@@ -3282,6 +3286,17 @@ strong{
 }
 
 .chalkboard-img{
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 120%;
+
+  background-position: 0% 55%;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.chalkboard-img-img{
   background-image: url("../images/chalk-talk.jpg");
   background-image: -webkit-image-set(
     url("../images/chalk-talk.avif") type("image/avif"),
@@ -3291,14 +3306,6 @@ strong{
     url("../images/chalk-talk.avif") type("image/avif"),
     url("../images/chalk-talk.jpg") type("image/jpeg")
   );
-  height: 300px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: 120%;
-
-  background-position: 0% 55%;
-  margin-bottom: 20px;
-  border-radius: 2px;
 }
 
 .bb-description-img{
