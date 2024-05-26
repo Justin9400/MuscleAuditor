@@ -34,25 +34,14 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
-	 <link rel="preload" as="image" href="images/img_bg_2.jpg" />
+	<link rel="preload" as="image" href="images/img_bg_2.avif" type="image/avif"/>
 	 <link rel="preload" as="image" href="images/loader.webp" />
 	 <link rel="preload" as="image" href="images/MA_Letterhead_CAP.svg" />
 	 <link rel="preconnect" href="https://fonts.googleapis.com" />
 	 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
 	 
-	 <style type="text/css">
-
-		body{
-			margin: 0px !important;
-		}
-		
-		*{
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-		}
-		
+	 <style type="text/css">		
 		@font-face {
 			font-family: icomoon;
 			src: url(../fonts/icomoon/icomoon.woff?srf3rx);
@@ -74,38 +63,8 @@
 			-moz-osx-font-smoothing: grayscale
 		}
 
-		h1{
-			color: #000;
-			font-family: "Work Sans", Arial, sans-serif;
-			font-weight: 400;
-			margin: 0 0 20px 0;
-		}
-	
-		.contact-header-container{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
-		}
-
-		.contact-header{
-		color: white;
-		margin: 0;
-		font-weight: 400;
-		text-transform: uppercase;
-		font-size: 55px;
-		}
-
-		@media screen and (max-width: 1023px){
-			.contact-header{
-				font-size: 40px;
-			}
-		}
-
-		@media screen and (max-width: 480px){
-			.contact-header{
-				font-size: 30px;
-			}
+		.animate-box{
+			opacity: 0;
 		}
 
 		.fh5co-loader {
@@ -118,142 +77,11 @@
 			background: url(../images/loader.webp) center no-repeat #fff;
 		}
 
-
-		.fh5co-nav {
-			margin: 0;
-			padding: 0;
-			width: 100%;
-			padding: 0;
-			z-index: 2000;
+		.contact-header-container{
 			position: relative;
+			z-index: 1;
 		}
 
-		.fh5co-nav .top-menu {
-			padding: 21px 0;
-			height: 90px;
-		}
-
-		.fh5co-nav #fh5co-logo {
-			font-size: 24px;
-			margin: 0;
-			padding: 0;
-			text-transform: uppercase;
-			font-weight: bold;
-			font-weight: 700;
-			font-family: "Work Sans", Arial, sans-serif;
-		}
-
-		.fh5co-nav a {
-		padding: 5px 10px;
-		color: #000;
-		}
-
-		@media screen and (max-width: 1200px) {
-			.fh5co-nav .menu-1 {
-				display: none;
-			}
-		}
-
-		.fh5co-nav ul {
-		padding: 0;
-		margin: 5px 0 0 0;
-		}
-
-		.fh5co-nav ul li {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-		display: inline;
-		}
-
-		.fh5co-nav ul li a {
-		font-size: 13px;
-		padding: 30px 15px;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		-webkit-transition: 0.5s;
-		-o-transition: 0.5s;
-		transition: 0.5s;
-		font-weight: 500;
-		}
-
-		.fh5co-nav ul li a.btn-primary{
-			padding: 13px;
-			margin: 0;
-			color: white;
-			text-transform: none !important;
-			font-size: 15px;
-			/* text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); */
-			/* -webkit-text-stroke: .5px black; */
-		}
-
-		.nav-container{
-		display: flex ;
-		align-items: center;
-		}
-
-		.nav-logo{
-		width: 30% !important;
-		}
-
-		@media screen and (max-width: 560px){
-			.nav-logo{width: 60% !important;}
-		}
-
-		#contactus{
-			position: relative;
-			float: none !important;
-			z-index: 200;
-		}
-
-		#page{
-			position: relative;
-		}
-
-		.fh5co-cover.fh5co-cover-sm {
-		height: 600px;
-		}
-
-		@media screen and (max-width: 768px) {
-			.fh5co-cover.fh5co-cover-sm {
-				height: 400px;
-			}
-		}
-		.fh5co-cover.fh5co-cover-sm .display-t,
-		.fh5co-cover.fh5co-cover-sm .display-tc {
-		height: 400px;
-		display: table;
-		width: 100%;
-		}
-
-		@media screen and (max-width: 768px) {
-			.fh5co-cover.fh5co-cover-sm .display-t,
-			.fh5co-cover.fh5co-cover-sm .display-tc {
-				height: 400px;
-			}
-		}
-
-		.animate-box {
-		opacity: 0;
-		/* will-change: transform; */
-		}
-
-		.fh5co-cover .overlay {
-			z-index: -1 !important;
-			position: absolute;
-			bottom: 0;
-			top: 0;
-			left: 0;
-			right: 0;
-			/* background: rgba(0, 0, 0, 0.3); */
-		}
-
-		.col-xs-2{
-			position: relative;
-			min-height: 1px;
-			padding-left: 15px;
-			padding-right: 15px;
-		}
 
 		.icon-arrow-up:before {
 		content: "\e096";
@@ -378,7 +206,7 @@
 		</div>
 	</nav>
 
-	<header id="contactus" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/img_bg_2.jpg); height:14vw; background-color: black;" data-stellar-background-ratio="0.5">
+	<header id="contactus" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/img_bg_2.avif); height:14vw; background-color: black;" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="contact-header-container">
 			<!-- <div class="row">
