@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Muscle Auditor &mdash; Personal Training in Bellevue, WA</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Muscle Auditor" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 	<meta name="author" content="freehtml5.co" />
 
@@ -34,33 +34,111 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
-	<link rel="icon" href="images/MA_SecondaryLogo.WH.svg" type="image/svg+xml">
+	<link rel="preload" as="image" href="images/loader.webp" type="image/webp"/>
+	<link rel="preload" as="image" href="images/MA_Letterhead_CAP.svg"/>
+	<link rel="preload" as="image" href="images/squat.avif" type="image/avif"/>
 
-	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+	<link rel="icon" href="images/MA_SecondaryLogo.WH.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="images/MA_SecondaryLogo.WH_Apple_Touch_Icon.png">
 	
+	<link rel="preload" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800"></noscript>
+	
+	<style>
+		.animate-box{
+			opacity: 0;
+		}
+
+		.fh5co-loader {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 100 !important;
+			background: url(../images/loader.webp) center no-repeat #fff;
+		}
+
+		.contact-header-container{
+			position: relative;
+			z-index: 1;
+		}
+
+	</style>
+
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="preload" href="css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/animate.css"></noscript>
+
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="preload" href="css/icomoon.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/icomoon.css"></noscript>
+
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="preload" href="css/index.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+	<noscript><link rel="stylesheet" href="css/index.css"></noscript>
 
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- <link rel="stylesheet" href="css/magnific-popup.css"> -->
 
 	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
+	<link rel="preload" href="css/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/owl.carousel.min.css"></noscript>
+	<!-- <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
+	<link rel="preload" href="css/owl.theme.default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/owl.theme.default.min.css"></noscript>
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet';removeWhite()">
+	<noscript><link rel="stylesheet" href="css/style.css"></noscript>
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- <script src="js/modernizr-2.6.2.min.js"></script> -->
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+
+	<script>
+		var removeWhite = function() {
+				const loaderElement = document.querySelector(".fh5co-loader");
+				loaderElement.addEventListener("transitionend", function(event) {
+					loaderElement.style.display= "none";
+				});
+
+				loaderElement.style.transition = "opacity 0.5s"; // Set the transition duration
+				loaderElement.style.opacity = "0"; // Fade out the element
+		};
+		
+		// var animationTimeout = function() {
+		if ('IntersectionObserver' in window) {
+			setTimeout(() => {
+				const observer = new IntersectionObserver(entries => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							// Element is in the viewport, remove the class
+							entry.target.classList.remove('animate-box');
+						}
+					});
+				}, { root: null, threshold: 0.5 });
+
+				// Select all elements with the class "animate-box"
+				const animateBoxes = document.querySelectorAll('.animate-box');
+
+				// Observe each element
+				animateBoxes.forEach(box => {
+					observer.observe(box);
+				});
+
+				setTimeout(() => {observer.disconnect(); }, 500);
+			}, 2500);
+		}
+		//}
+	</script>
 
 	</head>
 	<body>
@@ -129,7 +207,7 @@
 			<div class="row">
 				<div class="text-center col-md-4 animate-box">
 					<div class="services">
-						<span><img class="img-responsive" src="images/dumbbell.svg" alt=""></span>
+						<span><img class="img-responsive" src="images/dumbbell.svg" alt="" loading="lazy" width="60" height="60"></span>
 						<h3>1:1 Sessions</h3>
 						<p>Work with an expert to help you progress towards a resilient, thriving body with personalized training</p>
 						<p><a href="services.html#sessions-location" class="btn btn-primary btn-outline btn-sm" aria-label="learn more about one-on-one sessions">1:1 Sessions <i class="icon-arrow-right"></i></a></p>
@@ -137,7 +215,7 @@
 				</div>
 				<div class="text-center col-md-4 animate-box">
 					<div class="services">
-						<span><img class="img-responsive" src="images/baseball_set.svg" alt=""></span>
+						<span><img class="img-responsive" src="images/baseball_set.svg" alt="" loading="lazy" width="60" height="60"></span>
 						<h3>Baseball Performance</h3>
 						<p>Perform at your best and develop resilience against stress and injury with the help of an experienced mentor</p>
 						<p><a href="baseball.html" class="btn btn-primary btn-outline btn-sm" aria-label="learn more about baseball performance">Baseball Performance <i class="icon-arrow-right"></i></a></p>
@@ -145,7 +223,7 @@
 				</div>
 								<div class="text-center col-md-4 animate-box">
 					<div class="services">
-						<span><img class="img-responsive" src="images/phone2.svg" alt=""></span>
+						<span><img class="img-responsive" src="images/phone2.svg" alt="" loading="lazy" width="60" height="60"></span>
 						<h3>Remote Training</h3>
 						<p>Progress independently with app-based remote training, fully tailored to each client's unique needs</p>
 						<p><a href="services.html#remote-location" class="btn btn-primary btn-outline btn-sm" aria-label="learn more about remote training">Remote Training <i class="icon-arrow-right"></i></a></p>
@@ -205,8 +283,8 @@
 						<div class="trainer">
 							<a href="about.html">
 								<picture>
-									<source srcset="images/Kyle-full.avif" type="image/avif">
-									<img class="img-responsive" src="images/Kyle-full.jpg" alt="trainer">
+									<source srcset="images/Kyle-full.avif" type="image/avif" loading="lazy">
+									<img class="img-responsive" src="images/Kyle-full.jpg" alt="trainer" loading="lazy">
 								</picture>
 							</a>
 							<div class="title ">
@@ -802,8 +880,8 @@
 								<div class="text-center testimony-slide active">
 									<figure>
 										<picture>
-											<source srcset="images/KendraL.avif" type="image/avif">
-											<img src="images/KendraL.jpg" alt="user">
+											<source srcset="images/KendraL.avif" type="image/avif" loading="lazy">
+											<img src="images/KendraL.jpg" alt="user" loading="lazy">
 										</picture>
 									</figure>
 									<span>Kendra L.</span>
@@ -816,8 +894,8 @@
 								<div class="text-center testimony-slide active">
 									<figure>
 										<picture>
-											<source srcset="images/LamyaMcrop.avif" type="image/avif">
-											<img src="images/LamyaMcrop.jpg" alt="user">
+											<source srcset="images/LamyaMcrop.avif" type="image/avif" loading="lazy">
+											<img src="images/LamyaMcrop.jpg" alt="user" loading="lazy">
 										</picture>
 									</figure>
 									<span>Lamya M.</span>
@@ -1049,24 +1127,24 @@
 	</div>
 	
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+	<script defer src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script defer src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script defer src="js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script defer src="js/jquery.waypoints.min.js"></script>
 	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
+	<script defer src="js/jquery.stellar.min.js"></script>
 	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+	<script defer src="js/owl.carousel.min.js"></script>
 	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
+	<!-- <script src="js/jquery.countTo.js"></script> -->
 	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
+	<!-- <script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script> -->
 	<!-- Main -->
-	<script src="js/main.js"></script>
+	<script defer src="js/main.js"></script>
 
 	
 
