@@ -242,6 +242,8 @@
 			autoHeight: true
 		});
 
+		setTimeout(() => {owl.trigger('refresh.owl.carousel');}, 3000);
+
 	};
 
 	var tabs = function() {
