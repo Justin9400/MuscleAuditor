@@ -303,12 +303,7 @@
 		}); 
 	};
 
-	var formFocus = function() {
-		document.getElementById('bb-cta-btn').addEventListener('click', function() {
-			var name = document.getElementById('bb-fname');
-			name.focus();
-		});
-	};
+
 	
 	$(function(){
 		mobileMenuOutsideClick();
@@ -322,7 +317,7 @@
 		parallax();
 		testimonialCarousel();
 		tabs();
-		formFocus();
+		// formFocus();
 	});
 
 
@@ -493,3 +488,10 @@
 	}
 
 }());
+
+var formFocus = function() {
+	// document.getElementById('bb-cta-btn').addEventListener('click', function() {
+		var name = document.getElementById('bb-fname');
+		name.focus();
+	// });
+};

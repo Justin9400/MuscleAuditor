@@ -3290,11 +3290,37 @@ strong{
   height: 300px;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: 120%;
 
-  background-position: 0% 55%;
   margin-bottom: 20px;
-  border-radius: 2px;
+  border-radius: 4px;
+}
+
+.bb-description-par-img-1{
+  background-image: url("../images/medicine-ball-lifts.jpg");
+  background-image: -webkit-image-set(
+    url("../images/medicine-ball-lifts.avif") type("image/avif"),
+    url("../images/medicine-ball-lifts.jpg") type("image/jpeg")
+  );
+  background-image: image-set(
+    url("../images/medicine-ball-lifts.avif") type("image/avif"),
+    url("../images/medicine-ball-lifts.jpg") type("image/jpeg")
+  );
+  background-position: center;
+  background-size: 100%;
+}
+
+.bb-description-par-img-2{
+  background-image: url("../images/baseball-assessment.jpg");
+  background-image: -webkit-image-set(
+    url("../images/baseball-assessment.avif") type("image/avif"),
+    url("../images/baseball-assessment.jpg") type("image/jpeg")
+  );
+  background-image: image-set(
+    url("../images/baseball-assessment.avif") type("image/avif"),
+    url("../images/baseball-assessment.jpg") type("image/jpeg")
+  );
+  background-position: center;
+  background-size: 100%;
 }
 
 .chalkboard-img-img{
@@ -3307,6 +3333,9 @@ strong{
     url("../images/chalk-talk.avif") type("image/avif"),
     url("../images/chalk-talk.jpg") type("image/jpeg")
   );
+  background-size: 120%;
+
+  background-position: 0% 55%;
 }
 
 .bb-description-img{
@@ -3328,6 +3357,7 @@ strong{
   align-items: center;
   /* height: 300px; */
   position: relative;
+  flex-direction: column;
 }
 
 .bb-description-img-1{
@@ -3360,7 +3390,7 @@ strong{
   /* border-left: 2px solid #efefef; */
   padding-left: 20px;
   height: 100%;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   margin-bottom: 0px;
 }
@@ -3401,4 +3431,13 @@ strong{
   .bpm-cta h2{
     font-size: 30px;
   }
+
+  .chalkboard-img{
+    height: 55vw;
+  }
+}
+
+@media screen and (max-width: 480px){
+
+
 }
