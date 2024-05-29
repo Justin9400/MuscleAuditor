@@ -3056,6 +3056,7 @@ strong{
   line-height: normal;
   font-family: Geometrix, "Work Sans";
   text-transform: uppercase;
+  margin: 0px !important;
 }
 
 .bb-subtitle{

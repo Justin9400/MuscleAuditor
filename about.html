@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="en">
 	<head>
+
+	<!-- SEO tags -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Muscle Auditor Personal Training &mdash; About</title>
@@ -17,6 +19,7 @@
 	<meta property="og:site_name" content="Muscle Auditor">
 	<meta name="twitter:image:alt" content="Two young males squatting with barbells">
 
+	<!-- Preload assets -->
 	<link rel="preload" as="image" href="images/img_bg_2.avif" type="image/avif"/>
 	<link rel="preload" as="image" href="images/loader.webp" type="image/webp"/>
 	<link rel="preload" as="image" href="images/MA_Letterhead_CAP.svg"/>
@@ -25,12 +28,11 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+	<!-- Icons -->
 	<link rel="icon" href="images/MA_SecondaryLogo.WH.svg" type="image/svg+xml">
 	<link rel="apple-touch-icon" href="images/MA_SecondaryLogo.WH_Apple_Touch_Icon.png">
 
-	<link rel="preload" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800"></noscript>
-	
+	<!-- Inline styles -->
 	 <style>
 		.animate-box{
 			opacity: 0;
@@ -50,45 +52,33 @@
 			position: relative;
 			z-index: 1;
 		}
-
 	 </style>
 
+	 <!-- Google fonts -->
+	<link rel="preload" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800"></noscript>
+
 	<!-- Animate.css -->
-	
 	<link rel="preload" href="css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="css/animate.css"></noscript>
 
 	<!-- Icomoon Icon Fonts-->
 	<link rel="preload" href="css/icomoon.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="css/icomoon.css"></noscript>
+
 	<!-- Bootstrap  -->
 	<link rel="preload" href="css/about.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
 	<noscript><link rel="stylesheet" href="css/about.css"></noscript>
 
-	<!-- <link rel="preload" href="css/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet';removeWhite()">
-	<noscript><link rel="stylesheet" href="css/bootstrap.css"></noscript> -->
-
 	<!-- Magnific Popup -->
-	<!-- <link rel="stylesheet" href="css/magnific-popup.css"> -->
 	<link rel="preload" href="css/magnific-popup.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="css/magnific-popup.css"></noscript>
 
-	<!-- Owl Carousel  -->
-	<!-- <link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
-
 	<!-- Theme style  -->
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
 	<link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet';removeWhite()">
 	<noscript><link rel="stylesheet" href="css/style.css"></noscript>
 
-	<!-- Modernizr JS -->
-	<!-- <script src="js/modernizr-2.6.2.min.js"></script> -->
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
+	<!-- Inline script -->
 	<script>
 		var removeWhite = function() {
 				const loaderElement = document.querySelector(".fh5co-loader");
@@ -96,11 +86,10 @@
 					loaderElement.style.display= "none";
 				});
 
-				loaderElement.style.transition = "opacity 0.5s"; // Set the transition duration
-				loaderElement.style.opacity = "0"; // Fade out the element
+				loaderElement.style.transition = "opacity 0.5s";
+				loaderElement.style.opacity = "0";
 		};
 		
-		// var animationTimeout = function() {
 		if ('IntersectionObserver' in window) {
 			setTimeout(() => {
 				const observer = new IntersectionObserver(entries => {
@@ -123,30 +112,19 @@
 				setTimeout(() => {observer.disconnect(); }, 500);
 			}, 2500);
 		}
-		//}
 	</script>
 
 	</head>
 	<body>
 		
 	<div class="fh5co-loader"></div>
-	
+					
+<!-------------------------->
+<!----------Navbar---------->
+<!-------------------------->
+
 	<div id="page">
 		<nav class="fh5co-nav" role="navigation">
-			<!-- <div class="top">
-				<div class="container">
-					<div class="row">
-						<div class="text-right col-xs-12">
-							<p class="num">Call: +01 123 456 7890</p>
-							<ul class="fh5co-social">
-								<li><a href="#"><i class="icon-twitter"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble"></i></a></li>
-								<li><a href="#"><i class="icon-github"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div> -->
 			<div class="top-menu top-nav-container">
 				<div class="container">
 					<div class="row nav-container">
@@ -168,22 +146,24 @@
 				</div>
 			</div>
 		</nav>
-
+		
+<!------------------------>
+<!----------Hero---------->
+<!------------------------>
 
 	<header id="contactus" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-color: black; background-image:url(images/img_bg_2.avif); height:14vw;" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="contact-header-container">
-			<!-- <div class="row">
-				<div class="text-center col-md-8 col-md-offset-2">
-					<div class="display-t"> -->
-						<div class="animate-box" data-animate-effect="fadeIn">
-							<h1 class="contact-header">About</h1>
-						</div>
-					<!-- </div>
-				</div>
-			</div> -->
+			<div class="animate-box" data-animate-effect="fadeIn">
+				<h1 class="contact-header">About</h1>
+			</div>
 		</div>
 	</header>
+	
+<!-------------------------------->
+<!----------Our Approach---------->
+<!-------------------------------->
+
 	<div class="approach-container" id="fh5co-pricing">
 		<div class="container">
 			<div class="row animate-box">
@@ -199,20 +179,19 @@
 				</div>
 				<div class="approach-img animate-box"></div>
 			</div>
-			<!-- <p class="process-paragraph">
-				<strong>Who can benefit?</strong> <br>Short answer: anyone! Whether you're an athlete who's dealing with injury, a full time employee or parent who is tired of their constant pain and irritation,
-				or someone who needs help to slow down the aging process, Kyle creates a unique, individualized exercise experience just for you! A multitude of different tools and philosophies
-				will be employed to help you meet your specific goals.
-			</p> -->
 		</div>
 	</div>
+	
+<!------------------------------>
+<!----------Principles---------->
+<!------------------------------>
+
 	<div class="principles-container parallax">
 	<div class="principles-overlay">
 		<div class="container">
 			<div class="row">
 				<div class="text-center col-md-8 col-md-offset-2 fh5co-heading animate-box principles-header">
 					<h2>Our Principles</h2>
-					<!-- <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p> -->
 				</div>
 			</div>
 			<div class="principles-body">
@@ -222,20 +201,20 @@
 					<li class="principle animate-box"><span class="principle-number">3.</span> <strong>The body is a complex system of integrated parts.<br></strong> The muscular system is not the hormonal system is not the skeletal system is not the nervous system. They do, however, interact in symphony with each other. As such, the impact of exercise on each system must be taken into account.</li>
 					<li class="principle animate-box"><span class="principle-number">4.</span> <strong>Exercise is physics applied to the body.<br></strong> Joints are points of rotation and muscles create motion around those points. As such, we do not select exercises out of a book. We build exercises around how your unique body is built to move and train specific tissue.</li>
 				</ul>
-				<!-- <div>
-					<img class="img-principles" src="images/laptop-bench.jpg" alt="trainer">
-				</div> -->
 			</div>
 		</div>
 	</div>
 	</div>
+
+<!--------------------------->
+<!----------Founder---------->
+<!--------------------------->
 
 	<div class="founder-container">
 		<div class="container">
 			<div class="row">
 				<div class="text-center col-md-8 col-md-offset-2 fh5co-heading animate-box founder-header">
 					<h2>Our Founder</h2>
-					<!-- <p>Kyle Goemmer</p> -->
 				</div>
 			</div>
 			<div class="founder-description">
@@ -257,110 +236,64 @@
 		</div>
 	</div>
 	
+<!--------------------------->
+<!----------Gallery---------->
+<!--------------------------->
+
 	<div id="fh5co-gallery">
 		<div class="container">
 			<div class="row">
 				<div class="text-center col-md-8 col-md-offset-2 fh5co-heading animate-box">
 					<h2>Gallery</h2>
-					<!-- <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p> -->
 				</div>
 			</div>
 		</div>
 		<div class="container-fluid">
 			<div class="row row-bottom-padded-md">
 				<div class="col-md-12">
-					<ul id="fh5co-portfolio-list" class="image-gallery">
-
-						<!-- <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/squatting-preview.avif);"> -->
+					<ul id="fh5co-portfolio-list" class="image-gallery">						
 						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/squatting-preview.avif')">
 							<a href="images/squatting.jpg" aria-label="View gallery image 1">
-								<!-- <img src="images/squatting.jpg" alt="Thumbnail"> -->
-								<!-- <div class="case-studies-summary">
-									<span>Illustration</span>
-									<h2>Useful baskets</h2>
-								</div> -->
 							</a>
 						</li>
 						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/laptop-bench-thumbnail.avif')">
 							<a href="images/laptop-bench.jpg" aria-label="View gallery image 2">
-								<!-- <div class="case-studies-summary">
-									<span>Web Design</span>
-									<h2>Skater man in the road</h2>
-								</div> -->
 							</a>
 						</li>
-
 						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/Kyle-smiling-with-client-thumbnail.avif')">
 							<a href="images/Kyle-smiling-with-client.jpg" aria-label="View gallery image 3">
-								<!-- <div class="case-studies-summary">
-									<span>Web Design</span>
-									<h2>Two Glas of Juice</h2>
-								</div> -->
 							</a>
 						</li>
-
 						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/bench-press-spot-thumbnail.avif')"> 
 							<a href="images/bench-press-spot.jpg" aria-label="View gallery image 4">
-								<!-- <div class="case-studies-summary">
-									<span>Web Design</span>
-									<h2>Timer starts now!</h2>
-								</div> -->
 							</a>
 						</li>
 						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/medicine-ball-workout-thumbnail.avif')">
 							<a href="images/medicine-ball-workout.jpg" aria-label="View gallery image 5">
-								<!-- <div class="case-studies-summary">
-									<span>Web Design</span>
-									<h2>Two Glas of Juice</h2>
-								</div> -->
 							</a>
 						</li>
 						<li class="two-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/fistbump-thumbnail.avif')">
 							<a href="images/fistbump.jpg" aria-label="View gallery image 6">
-								<!-- <div class="case-studies-summary">
-									<span>Illustration</span>
-									<h2>Beautiful sunset</h2>
-								</div> -->
 							</a>
 						</li>
 						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/baseball-player-full-thumbnail.avif')">
 							<a href="images/baseball-player-full.jpg" aria-label="View gallery image 7">
-								<!-- <div class="case-studies-summary">
-									<span>Web Design</span>
-									<h2>Two Glas of Juice</h2>
-								</div> -->
 							</a>
 						</li>
 						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/balance-thumbnail.avif')">
 							<a href="images/balance.jpg" aria-label="View gallery image 8">
-								<!-- <div class="case-studies-summary">
-									<span>Web Design</span>
-									<h2>Two Glas of Juice</h2>
-								</div> -->
 							</a>
 						</li>
 						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/stretching-thumbnail.avif')">
 							<a href="images/stretching.jpg" aria-label="View gallery image 9">
-								<!-- <div class="case-studies-summary">
-									<span>Web Design</span>
-									<h2>Two Glas of Juice</h2>
-								</div> -->
 							</a>
 						</li>
 						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/Kyle-looking-at-whiteboard-thumbnail.avif')">
 							<a href="images/Kyle-looking-at-whiteboard.jpg" aria-label="View gallery image 10">
-								<!-- <div class="case-studies-summary">
-									<span>Web Design</span>
-									<h2>Two Glas of Juice</h2>
-								</div> -->
 							</a>
 						</li>
 						<li class="one-third animate-box lazy-load" data-animate-effect="fadeIn" data-bgimage="url('images/deadlift-thumbnail.avif')">
 							<a href="images/deadlift.jpg" aria-label="View gallery image 11">
-								<!-- <div class="case-studies-summary">
-									<span>Web Design</span>
-									<h2>Two Glas of Juice</h2>
-								</div> -->
 							</a>
 						</li>
 					</ul>
@@ -368,7 +301,10 @@
 			</div>
 		</div>
 	</div>
-	
+
+<!----------------------->
+<!----------CTA---------->
+<!----------------------->
 
 	<div id="fh5co-started" class="fh5co-bg" style="background-image: url(images/img_bg_3.jpg)">
 		<div class="overlay"></div>
@@ -386,14 +322,12 @@
 		</div>
 	</div>
 
+<!-------------------------->
+<!----------Footer---------->
+<!-------------------------->
 
 	<footer id="fh5co-footer" class="fh5co-bg" style="background-color: black;" role="contentinfo">
-		<!-- <div class="overlay foverlay"></div> -->
-
-
-
 			<div class="footer-container">
-
 				<div class="footer-start">
 					<div class="footer-contact">
 						<ul>
@@ -418,14 +352,12 @@
 						</ul>
 					</div>
 				</div>
-	
 				<div class="footer-end">
 					<img class="footer-logo" src="images/MA_SecondaryLogo.WH.svg" alt="Muscle Auditor secondary logo" loading="lazy">
 					<div><strong>Own your body,</strong> <br class="desktop-break">schedule an audit today</div>
 					<a href="https://www.vagaro.com/muscleauditor" class="btn btn-primary footer-btn">Schedule Now</a>
 				</div>
 			</div>
-
 		<div class="copyright-container">
 			<div class="row copyright">
 				<div class="text-center col-md-12">
@@ -441,9 +373,9 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</footer>
+
 	</div>
 
 	<div class="gototop js-top">
@@ -458,18 +390,13 @@
 	<script defer src="js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
 	<script defer src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<!-- <script src="js/jquery.stellar.min.js"></script> -->
-	<!-- Carousel -->
-	<!-- <script src="js/owl.carousel.min.js"></script> -->
-	<!-- countTo -->
-	<!-- <script src="js/jquery.countTo.js"></script> -->
 	<!-- Magnific Popup -->
 	<script defer src="js/jquery.magnific-popup.min.js"></script>
 	<script defer src="js/magnific-popup-options.js"></script>
 	<!-- Main -->
 	<script defer src="js/main.js"></script>
 
+	<!-- Magnific Popup -->
 	<script>
 		document.addEventListener('DOMContentLoaded', function() {
 			$('.image-gallery').magnificPopup({

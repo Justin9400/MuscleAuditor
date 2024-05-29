@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="en">
 	<head>
+
+	<!-- SEO tags -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Muscle Auditor Personal Training &mdash; Contact</title>
@@ -17,14 +19,20 @@
 	<meta property="og:site_name" content="Muscle Auditor">
 	<meta name="twitter:image:alt" content="Two young males squatting with barbells">
 
+	<!-- Preload assets -->
 	<link rel="preload" as="image" href="images/img_bg_2.avif" type="image/avif"/>
-	 <link rel="preload" as="image" href="images/loader.webp" />
-	 <link rel="preload" as="image" href="images/MA_Letterhead_CAP.svg" />
-	 <link rel="preconnect" href="https://fonts.googleapis.com" />
-	 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preload" as="image" href="images/loader.webp" />
+	<link rel="preload" as="image" href="images/MA_Letterhead_CAP.svg" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-	 
-	 <style type="text/css">		
+	<!-- Icon -->
+	<link rel="icon" href="images/MA_SecondaryLogo.WH.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="images/MA_SecondaryLogo.WH_Apple_Touch_Icon.png">
+	
+
+	<!-- Inline styles -->
+	<style type="text/css">		
 		@font-face {
 			font-family: icomoon;
 			src: url(../fonts/icomoon/icomoon.woff?srf3rx);
@@ -71,50 +79,31 @@
 		}
 	</style>
 
-	<link rel="icon" href="images/MA_SecondaryLogo.WH.svg" type="image/svg+xml">
-	<link rel="apple-touch-icon" href="images/MA_SecondaryLogo.WH_Apple_Touch_Icon.png">
-
-	<!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet"> -->
-
+	<!-- Google fonts -->
 	<link rel="preload" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800"></noscript>
 	
-	<!-- Animate.css -->
-	<!-- <link rel="stylesheet" href="css/animate.css"> -->
-	<!-- Icomoon Icon Fonts-->
-	<!-- <link rel="stylesheet" href="css/icomoon.css"> -->
-
-	<!-- Bootstrap  -->
-	<!-- <link rel="stylesheet" href="css/contact.css"> -->
+	<!-- Bootstrap and other -->
 	<link rel="preload" href="css/contact.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="css/contact.css"></noscript>
 
-	<!-- Magnific Popup -->
-	<!-- <link rel="stylesheet" href="css/magnific-popup.css"> -->
-
-	<!-- Owl Carousel  -->
-	<!-- <link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
-
 	<!-- Theme style  -->
-	<!-- <link rel="stylesheet" href="css/style.css" onload="removeWhite()"> -->
 	<link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet';removeWhite();">
 	<noscript><link rel="stylesheet" href="css/style.css"></noscript>
 
+	<!-- Inline script -->
 	<script>
 		var removeWhite = function() {
-			// document.addEventListener('DOMContentLoaded', function() {
 				const loaderElement = document.querySelector(".fh5co-loader");
 				loaderElement.addEventListener("transitionend", function(event) {
 					loaderElement.style.display= "none";
 				});
 
-				loaderElement.style.transition = "opacity 0.5s"; // Set the transition duration
-				loaderElement.style.opacity = "0"; // Fade out the element
-		// });
+				loaderElement.style.transition = "opacity 0.5s";
+				loaderElement.style.opacity = "0";
 		};
 		
-		// var animationTimeout = function() {
+		if ('IntersectionObserver' in window) {
 			setTimeout(() => {
 				const observer = new IntersectionObserver(entries => {
 					entries.forEach(entry => {
@@ -135,38 +124,21 @@
 
 				setTimeout(() => {observer.disconnect(); }, 500);
 			}, 2500);
-		//}
+		}
 	</script>
-
-	<!-- Modernizr JS -->
-	<!-- <script src="js/modernizr-2.6.2.min.js"></script> -->
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
 
 	</head>
 	<body>
 		
-
-	
 	<div id="page">
+
 	<div class="fh5co-loader"></div>
+
+<!-------------------------->
+<!----------Navbar---------->
+<!-------------------------->
+
 	<nav class="fh5co-nav" role="navigation">
-		<!-- <div class="top">
-			<div class="container">
-				<div class="row">
-					<div class="text-right col-xs-12">
-						<p class="num">Call: +01 123 456 7890</p>
-						<ul class="fh5co-social">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div> -->
 		<div class="top-menu top-nav-container">
 			<div class="container">
 				<div class="row nav-container">
@@ -189,39 +161,43 @@
 		</div>
 	</nav>
 
+<!------------------------>
+<!----------Hero---------->
+<!------------------------>
+
 	<header id="contactus" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/img_bg_2.avif); height:14vw; background-color: black;" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="contact-header-container">
-			<!-- <div class="row">
-				<div class="text-center col-md-8 col-md-offset-2">
-					<div class="display-t"> -->
-						<div class="animate-b" data-animate-effect="fadeIn">
-							<h1 class="contact-header">Contact Us</h1>
-						</div>
-					<!-- </div>
-				</div>
-			</div> -->
+			<div class="animate-b" data-animate-effect="fadeIn">
+				<h1 class="contact-header">Contact Us</h1>
+			</div>
 		</div>
 	</header>
-	<!-- <div id="map" class="fh5co-map"></div> -->
-		<!-- END map -->
-	
+
+
+<!----------------------------->
+<!----------Page Body---------->
+<!----------------------------->	
+
 	<div id="fh5co-contact">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-5 col-md-push-1 animate-box">
-					
+
+	<!----------Contact information---------->
+
+				<div class="col-md-5 col-md-push-1 animate-box">					
 					<div class="fh5co-contact-info">
 						<h3>Contact Information</h3>
 						<ul>
 							<li class="address"><a href="https://maps.app.goo.gl/jwSYvHgxozYQv1Zf7">12021 Northup Way, Suite #102</a></li>
 							<!-- <li class="phone"><a href="tel://0123456789">0123456789</a></li> -->
 							<li class="email"><a href="mailto:kyle@muscleauditor.com">kyle@muscleauditor.com</a></li>
-							<!-- <li class="url"><a href="http://gettemplates.co">gettemplates.co</a></li> -->
 						</ul>
 					</div>
-
 				</div>
+
+	<!----------Contact Form---------->
+
 				<div class="col-md-6 animate-box">
 					<h3>Get In Touch</h3>
 					<form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
@@ -235,21 +211,18 @@
 								<input name="Last Name" type="text" id="lname" class="form-control" placeholder="Doe" required>
 							</div>
 						</div>
-
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label for="phone">Phone Number*</label>
 								<input name="Phone" type="tel" pattern="(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.\-]?\d{3}[\s.\-]?\d{4}" id="phone" class="form-control" placeholder="012-345-6789" title="Phone numbers should be 10 digits, country code optional with &quot;+&quot;" required>
 							</div>
 						</div>
-
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label for="email">Email*</label>
 								<input name="email" type="email" id="email" class="form-control" placeholder="john@email.com" required>
 							</div>
 						</div>
-
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label for="message">Message*</label>
@@ -262,13 +235,12 @@
 						<div class="form-group">
 							<input type="submit" value="Send Message" class="btn btn-primary">
 						</div>
-
 						<input type="hidden" name="access_key" value="d3a4aa73-edf5-4d99-9492-c8bbd396cbb9">
 						<input type="hidden" name="subject" value="Contact Form Submission: ">
 						<input type="hidden" name="from_name" value="muscleauditor.com">
 						<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 					</form>		
-
+					<!-- Script to load hcaptcha -->
 					<script src="https://web3forms.com/client/script.js" async defer></script>
 					<script>
 						//Setting the subject field
@@ -304,11 +276,16 @@
 		</div>
 	</div>
 
+	<!-- Divider -->
 	<div class="contact-divider">
 		<div class="contact-divider-left"></div>
 		<div class="contact-divider-center">OR</div>
 		<div class="contact-divider-right"></div>
 	</div>
+
+<!----------------------------->
+<!----------Locations---------->
+<!----------------------------->	
 
 	<div id="locations-scroll" class="locations-container">
 		<div class="container">
@@ -350,30 +327,12 @@
 		</div>
 	</div>
 
-	<!-- <div id="fh5co-started" class="fh5co-bg" style="background-image: url(images/img_bg_3.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="text-center col-md-8 col-md-offset-2">
-					<h2>Fitness Classes this Summer <br> <span> Pay Now and <br> Get <span class="percent">OR</span> Discount</span></h2>
-				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="text-center col-md-8 col-md-offset-2">
-					<p><a href="#" class="btn btn-default btn-lg">Become a Member</a></p>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
+<!-------------------------->
+<!----------Footer---------->
+<!-------------------------->	
 
 	<footer id="fh5co-footer" class="fh5co-bg" style="background-color: black;" role="contentinfo">
-		<!-- <div class="overlay foverlay"></div> -->
-
-
-
 			<div class="footer-container">
-
 				<div class="footer-start">
 					<div class="footer-contact">
 						<ul>
@@ -398,14 +357,12 @@
 						</ul>
 					</div>
 				</div>
-	
 				<div class="footer-end">
 					<img class="footer-logo" src="images/MA_SecondaryLogo.WH.svg" alt="Muscle Auditor secondary logo">
 					<div><strong>Own your body,</strong> <br class="desktop-break">schedule an audit today</div>
 					<a href="https://www.vagaro.com/muscleauditor" class="btn btn-primary footer-btn">Schedule Now</a>
 				</div>
 			</div>
-
 		<div class="copyright-container">
 			<div class="row copyright">
 				<div class="text-center col-md-12">
@@ -421,9 +378,9 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</footer>
+
 	</div>
 
 	<div class="gototop js-top">
@@ -438,18 +395,6 @@
 	<script defer src="js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
 	<script defer src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<!-- <script defer src="js/jquery.stellar.min.js"></script> -->
-	<!-- Carousel -->
-	<!-- <script src="js/owl.carousel.min.js"></script> -->
-	<!-- countTo -->
-	<!-- <script src="js/jquery.countTo.js"></script> -->
-	<!-- Magnific Popup -->
-	<!-- <script src="js/jquery.magnific-popup.min.js"></script> -->
-	<!-- <script src="js/magnific-popup-options.js"></script> -->
-	<!-- Google Map -->
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script> -->
 	<!-- Main -->
 	<script defer src="js/main.js"></script>
 
