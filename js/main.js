@@ -230,7 +230,7 @@
 	};
 
 	var testimonialCarousel = function(){
-		
+		setTimeout(() => {
 		var owl = $('.owl-carousel-fullwidth');
 		owl.owlCarousel({
 			items: 1,
@@ -243,7 +243,7 @@
 		});
 
 		setTimeout(() => {owl.trigger('refresh.owl.carousel');}, 3000);
-
+		}, 1000);
 	};
 
 	var tabs = function() {
